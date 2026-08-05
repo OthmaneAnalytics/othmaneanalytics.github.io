@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en" data-build="SOFTWARE-SELECTED-PAPER-FIGURES-20260805194223">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Software | Othmane Mazhar</title>
+
+  <meta
+    name="description"
+    content="Open-source implementations and reproducible research artifacts associated with work by Othmane Mazhar."
+  >
+
+  <link
+    rel="canonical"
+    href="https://othmaneanalytics.github.io/software.html"
+  >
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <link
+    rel="stylesheet"
+    href="assets/homepage.css?v=20260805191635"
+  >
+
+  <link
+    rel="stylesheet"
+    href="assets/software.css?v=20260805194223"
+  >
+</head>
+
+<body>
+  <!-- SOFTWARE-PAGE-20260805191635 -->
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-row">
+      <div class="site-name">
+        <a href="index.html">Othmane Mazhar</a>
+      </div>
+
+      <button
+        class="menu-button"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+      >
+        Menu
+      </button>
+
+      <nav
+        id="primary-navigation"
+        class="site-nav"
+        aria-label="Primary navigation"
+      >
+        <a href="about.html">About</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="software.html" aria-current="page">Software</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="documents/cv.pdf">CV</a>
+        <a href="index.html">Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container software-main">
+    <h1 class="software-visually-hidden">Software</h1>
+
+    <div class="software-layout">
+      <article class="software-content">
+        <p class="software-lead">
+          Open-source implementations and reproducible computational
+          artifacts accompanying selected research papers.
+        </p>
+
+        <p class="software-introduction">
+          The repositories below provide experiment code, numerical
+          pipelines, configuration files, examples, and saved artifacts for
+          work on stochastic generative models, dependent time series, and
+          Schrödinger–Bass transport.
+        </p>
+
+        <section class="software-grid" aria-label="Software projects">
+          <article class="software-card">
+            <header class="software-card-header">
+              <div class="software-mark" aria-hidden="true">SB</div>
+
+              <div class="software-card-heading">
+                <span class="software-card-kicker">
+                  Statistical inference · Reproducibility
+                </span>
+
+                <h2>
+                  Schrödinger-Bridge Drift Estimation Experiments
+                </h2>
+              </div>
+            </header>
+
+            <figure class="software-project-figure">
+              <a
+                href="https://arxiv.org/abs/2605.05432"
+                aria-label="Open the associated paper"
+              >
+                <img
+                  src="assets/software/drift-estimation-qq.png?v=20260805194223"
+                  alt="QQ plots comparing theoretical and sample quantiles for Gaussian-to-Gaussian and mixture-to-mixture Schrödinger-bridge drift estimation experiments"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </a>
+
+              <figcaption>
+                Pointwise Gaussian approximation for the direct drift estimator.
+              </figcaption>
+            </figure>
+<div class="software-card-body">
+              <p class="software-description">
+                Reproducible experiments for direct nonparametric estimation
+                of Schrödinger-bridge drifts from dependent time-series data.
+                The repository accompanies the finite-sample, asymptotic,
+                and adaptive analysis developed in the associated paper.
+              </p>
+
+              <ul class="software-feature-list">
+                <li>
+                  Kernel drift estimators and deterministic reference
+                  computations
+                </li>
+
+                <li>
+                  Rate, central-limit, adaptivity, and stress-test drivers
+                </li>
+
+                <li>
+                  Configurations, processed results, figures, and tests
+                </li>
+              </ul>
+            </div>
+
+            <div class="software-actions">
+              <a
+                class="software-action"
+                href="https://github.com/OthmaneAnalytics/sb-drift-experiments"
+              >
+                Repository
+              </a>
+
+              <a
+                class="software-action"
+                href="https://arxiv.org/abs/2605.05432"
+              >
+                Associated paper
+              </a>
+            </div>
+          </article>
+
+          <article class="software-card">
+            <header class="software-card-header">
+              <div class="software-mark" aria-hidden="true">TS</div>
+
+              <div class="software-card-heading">
+                <span class="software-card-kicker">
+                  Financial time series
+                </span>
+
+                <h2>SBBTS</h2>
+              </div>
+            </header>
+
+            <figure class="software-project-figure">
+              <a
+                href="https://arxiv.org/abs/2604.07159"
+                aria-label="Open the associated paper"
+              >
+                <img
+                  src="assets/software/sbbts-correlation-matrices.png?v=20260805194223"
+                  alt="Side-by-side correlation matrices for real S&P 500 data and synthetic data generated by SBBTS"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </a>
+
+              <figcaption>
+                Cross-asset correlation structure in real and SBBTS-generated data.
+              </figcaption>
+            </figure>
+<div class="software-card-body">
+              <p class="software-description">
+                Official implementation of the Schrödinger–Bass framework
+                for synthetic financial time-series generation and data
+                augmentation.
+              </p>
+
+              <ul class="software-feature-list">
+                <li>End-to-end Heston simulation workflow</li>
+                <li>S&amp;P 500 cluster augmentation experiments</li>
+                <li>Training, sampling, and preprocessing utilities</li>
+              </ul>
+            </div>
+
+            <div class="software-actions">
+              <a
+                class="software-action"
+                href="https://github.com/alexouadi/SBBTS"
+              >
+                Repository
+              </a>
+
+              <a
+                class="software-action"
+                href="https://arxiv.org/abs/2604.07159"
+              >
+                Associated paper
+              </a>
+            </div>
+          </article>
+
+          <article class="software-card">
+            <header class="software-card-header">
+              <div class="software-mark" aria-hidden="true">LM</div>
+
+              <div class="software-card-heading">
+                <span class="software-card-kicker">
+                  Generative diffusion modelling
+                </span>
+
+                <h2>LightSBB-M</h2>
+              </div>
+            </header>
+
+            <figure class="software-project-figure">
+              <a
+                href="https://arxiv.org/abs/2601.19312"
+                aria-label="Open the associated paper"
+              >
+                <img
+                  src="assets/software/lightsbb-adult-child.png?v=20260805194223"
+                  alt="Adult input faces translated into child faces using LightSB-M and Schrödinger-Bass models at several beta values"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </a>
+
+              <figcaption>
+                Adult-to-child unpaired image translation with LightSB-M and SBB.
+              </figcaption>
+            </figure>
+<div class="software-card-body">
+              <p class="software-description">
+                Official implementation of a lightweight
+                Schrödinger–Bass bridge method for generative transport,
+                including synthetic experiments and an image-translation
+                example.
+              </p>
+
+              <ul class="software-feature-list">
+                <li>Model architecture and training implementation</li>
+                <li>Reusable Schrödinger–Bass package</li>
+                <li>Example Jupyter notebook for image translation</li>
+              </ul>
+            </div>
+
+            <div class="software-actions">
+              <a
+                class="software-action"
+                href="https://github.com/alexouadi/LightSBB-M"
+              >
+                Repository
+              </a>
+
+              <a
+                class="software-action"
+                href="https://arxiv.org/abs/2601.19312"
+              >
+                Associated paper
+              </a>
+            </div>
+          </article>
+        </section>
+      </article>
+</div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <a href="https://www.institutlouisbachelier.org/en">
+        Institute Louis Bachelier
+      </a>
+
+      <span class="footer-divider">|</span>
+
+      <a href="https://www.institutlouisbachelier.org/en/we-are/about-the-fondation-du-risque">
+        Fondation du Risque
+      </a>
+
+      <span class="footer-divider">|</span>
+
+      <a href="https://scholar.google.com/citations?user=M4yrAe8AAAAJ&amp;hl=en">
+        Google Scholar
+      </a>
+
+      <span class="footer-divider">|</span>
+
+      <a href="https://orcid.org/0000-0003-1521-9091">
+        ORCID
+      </a>
+
+      <span class="footer-divider">|</span>
+
+      <a href="https://github.com/OthmaneAnalytics">
+        GitHub
+      </a>
+
+      <span class="footer-divider">|</span>
+
+      <a href="index.html">Home</a>
+
+      <span class="footer-divider">|</span>
+
+      <span>© 2026 Othmane Mazhar</span>
+    </div>
+  </footer>
+
+  <script>
+    const menuButton = document.querySelector(".menu-button");
+    const navigation = document.querySelector(".site-nav");
+
+    menuButton.addEventListener("click", () => {
+      const isOpen = navigation.classList.toggle("open");
+      document.body.classList.toggle("menu-open", isOpen);
+      menuButton.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    navigation.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        navigation.classList.remove("open");
+        document.body.classList.remove("menu-open");
+        menuButton.setAttribute("aria-expanded", "false");
+      });
+    });
+  </script>
+</body>
+</html>
