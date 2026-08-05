@@ -988,3 +988,16 @@ h2 {
 }
 
 /* FINAL-CV-ALIGNMENT-STYLES-END */
+
+
+/* HOME-PROFILE-H1-START */
+
+.profile-name-heading {
+  margin: 0 0 0.7rem;
+  color: var(--teal);
+  font-size: 1.16rem;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+/* HOME-PROFILE-H1-END */
