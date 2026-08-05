@@ -1,0 +1,212 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 560"
+     role="img"
+     aria-labelledby="title">
+  <title id="title">
+    Optimal transport and stochastic control
+  </title>
+
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbfcff"/>
+      <stop offset="1" stop-color="#f2f8f8"/>
+    </linearGradient>
+
+    <linearGradient id="leftCloud" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#edf2ff"/>
+      <stop offset="1" stop-color="#dce5ff"/>
+    </linearGradient>
+
+    <linearGradient id="rightCloud" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e9f5f5"/>
+      <stop offset="1" stop-color="#d4ebec"/>
+    </linearGradient>
+
+    <filter id="shadow">
+      <feDropShadow
+        dx="0"
+        dy="10"
+        stdDeviation="14"
+        flood-color="#17355d"
+        flood-opacity=".12"
+      />
+    </filter>
+
+    <marker
+      id="arrowBlue"
+      viewBox="0 0 10 10"
+      refX="9"
+      refY="5"
+      markerWidth="8"
+      markerHeight="8"
+      orient="auto"
+    >
+      <path d="M0 0 L10 5 L0 10 Z" fill="#2f4ed8"/>
+    </marker>
+
+    <marker
+      id="arrowTeal"
+      viewBox="0 0 10 10"
+      refX="9"
+      refY="5"
+      markerWidth="8"
+      markerHeight="8"
+      orient="auto"
+    >
+      <path d="M0 0 L10 5 L0 10 Z" fill="#0f6f72"/>
+    </marker>
+
+    <marker
+      id="arrowOrange"
+      viewBox="0 0 10 10"
+      refX="9"
+      refY="5"
+      markerWidth="8"
+      markerHeight="8"
+      orient="auto"
+    >
+      <path d="M0 0 L10 5 L0 10 Z" fill="#f28c28"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="560" fill="url(#background)"/>
+
+  <rect
+    x="45"
+    y="40"
+    width="1110"
+    height="480"
+    rx="30"
+    fill="#ffffff"
+    filter="url(#shadow)"
+  />
+
+  <ellipse
+    cx="205"
+    cy="280"
+    rx="125"
+    ry="183"
+    fill="url(#leftCloud)"
+    stroke="#17355d"
+    stroke-width="4"
+  />
+
+  <ellipse
+    cx="995"
+    cy="280"
+    rx="125"
+    ry="183"
+    fill="url(#rightCloud)"
+    stroke="#17355d"
+    stroke-width="4"
+  />
+
+  <g fill="#2f4ed8">
+    <circle cx="155" cy="177" r="10"/>
+    <circle cx="199" cy="144" r="8"/>
+    <circle cx="238" cy="182" r="11"/>
+    <circle cx="147" cy="242" r="8"/>
+    <circle cx="211" cy="230" r="10"/>
+    <circle cx="262" cy="270" r="8"/>
+    <circle cx="164" cy="318" r="10"/>
+    <circle cx="226" cy="337" r="8"/>
+    <circle cx="183" cy="389" r="10"/>
+    <circle cx="259" cy="377" r="7"/>
+  </g>
+
+  <g fill="#0f6f72">
+    <circle cx="948" cy="176" r="10"/>
+    <circle cx="991" cy="144" r="8"/>
+    <circle cx="1038" cy="182" r="11"/>
+    <circle cx="940" cy="244" r="8"/>
+    <circle cx="1004" cy="230" r="10"/>
+    <circle cx="1052" cy="271" r="8"/>
+    <circle cx="953" cy="319" r="10"/>
+    <circle cx="1015" cy="337" r="8"/>
+    <circle cx="971" cy="389" r="10"/>
+    <circle cx="1048" cy="377" r="7"/>
+  </g>
+
+  <path
+    d="M320 170
+       C445 55 681 69 878 170"
+    fill="none"
+    stroke="#2f4ed8"
+    stroke-width="8"
+    stroke-linecap="round"
+    marker-end="url(#arrowBlue)"
+  />
+
+  <path
+    d="M326 235
+       C485 164 683 164 875 235"
+    fill="none"
+    stroke="#0f6f72"
+    stroke-width="8"
+    stroke-linecap="round"
+    marker-end="url(#arrowTeal)"
+  />
+
+  <path
+    d="M326 300
+       C490 270 690 270 875 300"
+    fill="none"
+    stroke="#f28c28"
+    stroke-width="8"
+    stroke-linecap="round"
+    marker-end="url(#arrowOrange)"
+  />
+
+  <path
+    d="M326 365
+       C490 433 696 433 875 365"
+    fill="none"
+    stroke="#6f83e8"
+    stroke-width="8"
+    stroke-linecap="round"
+    marker-end="url(#arrowBlue)"
+  />
+
+  <path
+    d="M327 426
+       C477 526 696 508 876 426"
+    fill="none"
+    stroke="#0f6f72"
+    stroke-width="8"
+    stroke-linecap="round"
+    marker-end="url(#arrowTeal)"
+  />
+
+  <g transform="translate(516 79)">
+    <path
+      d="M0 44 C52 1 108 1 164 44"
+      fill="none"
+      stroke="#2f4ed8"
+      stroke-width="5"
+    />
+
+    <path
+      d="M20 70 C66 38 112 38 147 70"
+      fill="none"
+      stroke="#0f6f72"
+      stroke-width="5"
+    />
+
+    <path
+      d="M40 95 C77 73 105 73 131 95"
+      fill="none"
+      stroke="#f28c28"
+      stroke-width="5"
+    />
+  </g>
+
+  <circle cx="600" cy="279" r="49"
+          fill="none"
+          stroke="#f28c28"
+          stroke-width="3"
+          opacity=".5"/>
+
+  <circle cx="600" cy="279" r="24"
+          fill="#f28c28"
+          opacity=".45"/>
+</svg>

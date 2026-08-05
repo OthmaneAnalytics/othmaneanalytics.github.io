@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 560"
+     role="img"
+     aria-labelledby="title">
+  <title id="title">
+    Statistical learning from dependent stochastic observations
+  </title>
+
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbfcff"/>
+      <stop offset="1" stop-color="#f1f5ff"/>
+    </linearGradient>
+
+    <linearGradient id="band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dce5ff" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#edf2ff" stop-opacity=".65"/>
+    </linearGradient>
+
+    <filter id="shadow">
+      <feDropShadow
+        dx="0"
+        dy="10"
+        stdDeviation="14"
+        flood-color="#17355d"
+        flood-opacity=".12"
+      />
+    </filter>
+  </defs>
+
+  <rect width="1200" height="560" fill="url(#background)"/>
+
+  <rect
+    x="45"
+    y="40"
+    width="1110"
+    height="480"
+    rx="30"
+    fill="#ffffff"
+    filter="url(#shadow)"
+  />
+
+  <g stroke="#dce2ef" stroke-width="2">
+    <path d="M90 450 H1110"/>
+    <path d="M90 350 H1110"/>
+    <path d="M90 250 H1110"/>
+    <path d="M90 150 H1110"/>
+
+    <path d="M170 100 V470"/>
+    <path d="M390 100 V470"/>
+    <path d="M610 100 V470"/>
+    <path d="M830 100 V470"/>
+    <path d="M1050 100 V470"/>
+  </g>
+
+  <path
+    d="M90 401
+       C160 352 224 379 286 314
+       C355 241 421 321 491 255
+       C560 190 633 278 706 207
+       C781 135 856 220 930 160
+       C996 106 1054 149 1110 113
+       L1110 223
+       C1054 259 996 216 930 270
+       C856 330 781 245 706 317
+       C633 388 560 300 491 365
+       C421 431 355 351 286 424
+       C224 489 160 462 90 511 Z"
+    fill="url(#band)"
+  />
+
+  <path
+    d="M90 456
+       C160 407 224 434 286 369
+       C355 296 421 376 491 310
+       C560 245 633 333 706 262
+       C781 190 856 275 930 215
+       C996 161 1054 204 1110 168"
+    fill="none"
+    stroke="#2f4ed8"
+    stroke-width="11"
+    stroke-linecap="round"
+  />
+
+  <path
+    d="M90 456
+       C160 407 224 434 286 369
+       C355 296 421 376 491 310
+       C560 245 633 333 706 262
+       C781 190 856 275 930 215
+       C996 161 1054 204 1110 168"
+    fill="none"
+    stroke="#6f83e8"
+    stroke-width="4"
+    stroke-linecap="round"
+  />
+
+  <g fill="#2f4ed8">
+    <circle cx="108" cy="432" r="7"/>
+    <circle cx="150" cy="416" r="6"/>
+    <circle cx="202" cy="439" r="7"/>
+    <circle cx="252" cy="388" r="6"/>
+    <circle cx="305" cy="360" r="7"/>
+    <circle cx="356" cy="320" r="6"/>
+    <circle cx="412" cy="355" r="7"/>
+    <circle cx="468" cy="326" r="6"/>
+    <circle cx="529" cy="275" r="7"/>
+    <circle cx="586" cy="298" r="6"/>
+    <circle cx="648" cy="310" r="7"/>
+    <circle cx="707" cy="257" r="6"/>
+    <circle cx="765" cy="214" r="7"/>
+    <circle cx="824" cy="244" r="6"/>
+    <circle cx="885" cy="238" r="7"/>
+    <circle cx="944" cy="202" r="6"/>
+    <circle cx="1004" cy="179" r="7"/>
+    <circle cx="1065" cy="193" r="6"/>
+  </g>
+
+  <g fill="#f28c28">
+    <circle cx="181" cy="393" r="9"/>
+    <circle cx="337" cy="333" r="9"/>
+    <circle cx="503" cy="294" r="9"/>
+    <circle cx="674" cy="280" r="9"/>
+    <circle cx="847" cy="225" r="9"/>
+    <circle cx="1027" cy="171" r="9"/>
+  </g>
+
+  <g transform="translate(118 94)">
+    <circle cx="0" cy="0" r="17" fill="#17355d"/>
+    <circle cx="48" cy="13" r="14" fill="#2f4ed8"/>
+    <circle cx="91" cy="-8" r="11" fill="#0f6f72"/>
+    <circle cx="127" cy="18" r="9" fill="#f28c28"/>
+
+    <path
+      d="M17 0
+         C32 1 35 10 48 13
+         C65 17 75 -3 91 -8
+         C106 -13 116 14 127 18"
+      fill="none"
+      stroke="#17355d"
+      stroke-width="4"
+    />
+  </g>
+
+  <g transform="translate(884 80)">
+    <rect
+      width="205"
+      height="88"
+      rx="16"
+      fill="#e8f4f4"
+      stroke="#0f6f72"
+      stroke-width="3"
+    />
+
+    <path
+      d="M26 62
+         C57 18 90 70 121 34
+         C150 1 174 45 184 24"
+      fill="none"
+      stroke="#0f6f72"
+      stroke-width="6"
+      stroke-linecap="round"
+    />
+
+    <circle cx="121" cy="34" r="7" fill="#f28c28"/>
+  </g>
+</svg>

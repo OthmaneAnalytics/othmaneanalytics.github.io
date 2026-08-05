@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 360 220"
+     role="img"
+     aria-labelledby="cv-title">
+  <title id="cv-title">
+    Curriculum vitae and academic career
+  </title>
+
+  
+  <style>
+    .outline {
+      fill: none;
+      stroke: #17355d;
+      stroke-width: 4;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .thin {
+      fill: none;
+      stroke: #2f4ed8;
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .soft-line {
+      fill: none;
+      stroke: #8ea2ee;
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .teal-line {
+      fill: none;
+      stroke: #0f6f72;
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .blue {
+      fill: #2f4ed8;
+    }
+
+    .soft-blue {
+      fill: #dce5ff;
+    }
+
+    .pale-blue {
+      fill: #f4f7ff;
+    }
+
+    .teal {
+      fill: #0f6f72;
+    }
+
+    .pale-teal {
+      fill: #dceff0;
+    }
+
+    .orange {
+      fill: #f28c28;
+    }
+
+    .pale-orange {
+      fill: #fde6cc;
+    }
+
+    .navy {
+      fill: #17355d;
+    }
+
+    .white {
+      fill: #ffffff;
+    }
+  </style>
+
+
+  <rect x="104" y="25"
+        width="199"
+        height="181"
+        rx="6"
+        class="soft-blue"
+        stroke="#8ea2ee"
+        stroke-width="4"/>
+
+  <rect x="74" y="13"
+        width="201"
+        height="184"
+        rx="6"
+        class="white"
+        stroke="#17355d"
+        stroke-width="5"/>
+
+  <circle cx="119" cy="61" r="24"
+          class="pale-orange"
+          stroke="#17355d"
+          stroke-width="4"/>
+
+  <circle cx="119" cy="54" r="8" class="orange"/>
+  <path d="M101 77 Q119 61 137 77"
+        class="orange"/>
+
+  <path d="M158 43 H246"
+        class="thin"/>
+  <path d="M158 60 H233"
+        class="soft-line"/>
+  <path d="M158 77 H245"
+        class="soft-line"/>
+
+  <path d="M101 107 H247"
+        class="soft-line"/>
+  <path d="M101 126 H224"
+        class="soft-line"/>
+  <path d="M101 145 H240"
+        class="soft-line"/>
+  <path d="M101 164 H217"
+        class="soft-line"/>
+
+  <path d="M291 51 V187"
+        class="outline"/>
+
+  <circle cx="291" cy="70" r="8"
+          class="orange"
+          stroke="#17355d"
+          stroke-width="3"/>
+
+  <circle cx="291" cy="111" r="8"
+          class="blue"
+          stroke="#17355d"
+          stroke-width="3"/>
+
+  <circle cx="291" cy="152" r="8"
+          class="teal"
+          stroke="#17355d"
+          stroke-width="3"/>
+
+  <path d="M301 70 H337"
+        class="thin"/>
+  <path d="M301 111 H326"
+        class="thin"/>
+  <path d="M301 152 H339"
+        class="thin"/>
+
+  <path d="M43 51 H73 M43 82 H73 M43 113 H73"
+        class="teal-line"/>
+</svg>

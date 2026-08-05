@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 520 300"
+  role="img"
+  aria-labelledby="title">
+  <title id="title">
+    Statistical learning from dependent stochastic data
+  </title>
+
+  <rect width="520" height="300" rx="18" fill="#f4f7ff"/>
+
+  <path
+    d="M36 231 H484"
+    stroke="#b9c4ec"
+    stroke-width="3"
+    stroke-linecap="round"
+  />
+
+  <path
+    d="M52 225
+       C84 186 113 222 143 171
+       C173 119 207 192 239 141
+       C272 88 305 169 341 117
+       C377 66 420 143 470 83"
+    fill="none"
+    stroke="#2f4ed8"
+    stroke-width="7"
+    stroke-linecap="round"
+  />
+
+  <path
+    d="M52 225
+       C84 186 113 222 143 171
+       C173 119 207 192 239 141
+       C272 88 305 169 341 117
+       C377 66 420 143 470 83"
+    fill="none"
+    stroke="#8ea2ee"
+    stroke-width="30"
+    stroke-linecap="round"
+    opacity=".22"
+  />
+
+  <g fill="#f28c28">
+    <circle cx="64" cy="210" r="7"/>
+    <circle cx="104" cy="199" r="7"/>
+    <circle cx="146" cy="164" r="7"/>
+    <circle cx="190" cy="169" r="7"/>
+    <circle cx="234" cy="145" r="7"/>
+    <circle cx="280" cy="129" r="7"/>
+    <circle cx="326" cy="129" r="7"/>
+    <circle cx="374" cy="100" r="7"/>
+    <circle cx="420" cy="113" r="7"/>
+    <circle cx="466" cy="83" r="7"/>
+  </g>
+
+  <g fill="#17355d" opacity=".78">
+    <circle cx="72" cy="96" r="5"/>
+    <circle cx="95" cy="111" r="5"/>
+    <circle cx="119" cy="87" r="5"/>
+    <circle cx="143" cy="104" r="5"/>
+    <circle cx="167" cy="80" r="5"/>
+  </g>
+
+  <path
+    d="M60 55 H195"
+    stroke="#0f6f72"
+    stroke-width="5"
+    stroke-linecap="round"
+  />
+
+  <path
+    d="M60 70 H154"
+    stroke="#8ea2ee"
+    stroke-width="4"
+    stroke-linecap="round"
+  />
+</svg>

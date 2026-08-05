@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 520 300"
+  role="img"
+  aria-labelledby="title">
+  <title id="title">
+    Controlled stochastic transport between probability distributions
+  </title>
+
+  <rect width="520" height="300" rx="18" fill="#f1f8f8"/>
+
+  <ellipse
+    cx="113"
+    cy="150"
+    rx="78"
+    ry="88"
+    fill="#ffffff"
+    stroke="#17355d"
+    stroke-width="5"
+  />
+
+  <ellipse
+    cx="407"
+    cy="150"
+    rx="78"
+    ry="88"
+    fill="#ffffff"
+    stroke="#17355d"
+    stroke-width="5"
+  />
+
+  <g fill="#2f4ed8">
+    <circle cx="81" cy="105" r="10"/>
+    <circle cx="118" cy="89" r="8"/>
+    <circle cx="143" cy="121" r="11"/>
+    <circle cx="82" cy="157" r="8"/>
+    <circle cx="125" cy="153" r="10"/>
+    <circle cx="153" cy="188" r="8"/>
+    <circle cx="101" cy="207" r="10"/>
+  </g>
+
+  <g fill="#0f6f72">
+    <circle cx="372" cy="100" r="10"/>
+    <circle cx="411" cy="88" r="8"/>
+    <circle cx="441" cy="121" r="11"/>
+    <circle cx="370" cy="157" r="8"/>
+    <circle cx="414" cy="153" r="10"/>
+    <circle cx="445" cy="190" r="8"/>
+    <circle cx="397" cy="208" r="10"/>
+  </g>
+
+  <path
+    d="M189 105 C245 47 300 53 335 105"
+    fill="none"
+    stroke="#2f4ed8"
+    stroke-width="6"
+    stroke-linecap="round"
+  />
+
+  <path
+    d="M191 150 C239 122 288 122 334 150"
+    fill="none"
+    stroke="#0f6f72"
+    stroke-width="6"
+    stroke-linecap="round"
+  />
+
+  <path
+    d="M188 194 C242 248 298 245 336 194"
+    fill="none"
+    stroke="#f28c28"
+    stroke-width="6"
+    stroke-linecap="round"
+  />
+
+  <path
+    d="M317 89 L337 105 L315 116"
+    fill="none"
+    stroke="#2f4ed8"
+    stroke-width="6"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <path
+    d="M314 137 L337 150 L315 163"
+    fill="none"
+    stroke="#0f6f72"
+    stroke-width="6"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <path
+    d="M316 182 L338 194 L318 208"
+    fill="none"
+    stroke="#f28c28"
+    stroke-width="6"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>

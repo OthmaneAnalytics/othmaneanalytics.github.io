@@ -1,0 +1,271 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 520 760"
+  role="img"
+  aria-labelledby="title desc">
+  <title id="title">Research overview</title>
+  <desc id="desc">
+    A connected visual composition representing statistical learning,
+    stochastic transport, and PDE analysis.
+  </desc>
+
+  <defs>
+    <linearGradient id="blueWash" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f1f4ff"/>
+      <stop offset="1" stop-color="#dce5ff"/>
+    </linearGradient>
+
+    <linearGradient id="tealWash" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#edf7f7"/>
+      <stop offset="1" stop-color="#d5ebec"/>
+    </linearGradient>
+
+    <linearGradient id="orangeWash" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff5e8"/>
+      <stop offset="1" stop-color="#fde2c1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="520" height="760" fill="#ffffff"/>
+
+  <path
+    d="M258 64
+       C181 129 329 192 255 258
+       C185 321 329 387 255 454
+       C188 515 324 584 257 694"
+    fill="none"
+    stroke="#cbd5f8"
+    stroke-width="8"
+    stroke-linecap="round"
+  />
+
+  <circle cx="258" cy="65" r="11" fill="#2f4ed8"/>
+  <circle cx="255" cy="258" r="11" fill="#0f6f72"/>
+  <circle cx="255" cy="454" r="11" fill="#f28c28"/>
+  <circle cx="257" cy="694" r="11" fill="#2f4ed8"/>
+
+  <!-- Statistical learning panel -->
+  <rect
+    x="48"
+    y="76"
+    width="424"
+    height="180"
+    rx="18"
+    fill="url(#blueWash)"
+    stroke="#d2daf5"
+    stroke-width="3"
+  />
+
+  <path
+    d="M82 210
+       C113 185 134 197 159 164
+       C187 128 214 171 240 138
+       C268 103 300 151 326 119
+       C354 85 387 123 435 86"
+    fill="none"
+    stroke="#2f4ed8"
+    stroke-width="6"
+    stroke-linecap="round"
+  />
+
+  <path
+    d="M82 224
+       C113 199 134 211 159 178
+       C187 142 214 185 240 152
+       C268 117 300 165 326 133
+       C354 99 387 137 435 100"
+    fill="none"
+    stroke="#8ea2ee"
+    stroke-width="18"
+    stroke-linecap="round"
+    opacity=".28"
+  />
+
+  <g fill="#f28c28">
+    <circle cx="99" cy="198" r="6"/>
+    <circle cx="141" cy="188" r="6"/>
+    <circle cx="188" cy="151" r="6"/>
+    <circle cx="233" cy="151" r="6"/>
+    <circle cx="278" cy="131" r="6"/>
+    <circle cx="326" cy="120" r="6"/>
+    <circle cx="382" cy="112" r="6"/>
+    <circle cx="429" cy="91" r="6"/>
+  </g>
+
+  <g fill="#17355d" opacity=".75">
+    <circle cx="105" cy="128" r="5"/>
+    <circle cx="137" cy="146" r="4"/>
+    <circle cx="171" cy="113" r="5"/>
+    <circle cx="209" cy="121" r="4"/>
+  </g>
+
+  <!-- Transport panel -->
+  <rect
+    x="48"
+    y="290"
+    width="424"
+    height="180"
+    rx="18"
+    fill="url(#tealWash)"
+    stroke="#cce1e2"
+    stroke-width="3"
+  />
+
+  <ellipse
+    cx="139"
+    cy="378"
+    rx="60"
+    ry="57"
+    fill="#ffffff"
+    stroke="#17355d"
+    stroke-width="4"
+  />
+
+  <ellipse
+    cx="385"
+    cy="378"
+    rx="60"
+    ry="57"
+    fill="#ffffff"
+    stroke="#17355d"
+    stroke-width="4"
+  />
+
+  <g fill="#2f4ed8">
+    <circle cx="109" cy="350" r="8"/>
+    <circle cx="137" cy="335" r="7"/>
+    <circle cx="162" cy="355" r="9"/>
+    <circle cx="118" cy="388" r="7"/>
+    <circle cx="151" cy="400" r="8"/>
+    <circle cx="139" cy="374" r="6"/>
+  </g>
+
+  <g fill="#0f6f72">
+    <circle cx="359" cy="349" r="8"/>
+    <circle cx="389" cy="337" r="7"/>
+    <circle cx="413" cy="360" r="9"/>
+    <circle cx="359" cy="391" r="7"/>
+    <circle cx="394" cy="404" r="8"/>
+    <circle cx="386" cy="374" r="6"/>
+  </g>
+
+  <path
+    d="M197 343 C240 304 285 304 328 343"
+    fill="none"
+    stroke="#2f4ed8"
+    stroke-width="5"
+    stroke-linecap="round"
+  />
+
+  <path
+    d="M197 378 C241 350 285 350 328 378"
+    fill="none"
+    stroke="#0f6f72"
+    stroke-width="5"
+    stroke-linecap="round"
+  />
+
+  <path
+    d="M197 411 C240 449 286 449 328 411"
+    fill="none"
+    stroke="#f28c28"
+    stroke-width="5"
+    stroke-linecap="round"
+  />
+
+  <path
+    d="M312 328 L330 343 L310 352"
+    fill="none"
+    stroke="#2f4ed8"
+    stroke-width="5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <path
+    d="M311 365 L330 378 L310 389"
+    fill="none"
+    stroke="#0f6f72"
+    stroke-width="5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <path
+    d="M311 399 L330 411 L311 423"
+    fill="none"
+    stroke="#f28c28"
+    stroke-width="5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- PDE panel -->
+  <rect
+    x="48"
+    y="504"
+    width="424"
+    height="180"
+    rx="18"
+    fill="url(#orangeWash)"
+    stroke="#f0dac0"
+    stroke-width="3"
+  />
+
+  <path
+    d="M83 638
+       C129 605 163 610 202 630
+       C244 651 281 644 318 603
+       C353 564 391 566 438 595"
+    fill="none"
+    stroke="#2f4ed8"
+    stroke-width="6"
+    stroke-linecap="round"
+  />
+
+  <path
+    d="M83 652
+       C129 619 163 624 202 644
+       C244 665 281 658 318 617
+       C353 578 391 580 438 609"
+    fill="none"
+    stroke="#8ea2ee"
+    stroke-width="5"
+    stroke-linecap="round"
+  />
+
+  <path
+    d="M83 666
+       C129 633 163 638 202 658
+       C244 679 281 672 318 631
+       C353 592 391 594 438 623"
+    fill="none"
+    stroke="#0f6f72"
+    stroke-width="4"
+    stroke-linecap="round"
+  />
+
+  <g fill="none" stroke="#d3af81" stroke-width="2">
+    <path d="M106 552 V662"/>
+    <path d="M153 543 V666"/>
+    <path d="M200 550 V669"/>
+    <path d="M247 537 V670"/>
+    <path d="M294 532 V660"/>
+    <path d="M341 540 V645"/>
+    <path d="M388 553 V633"/>
+  </g>
+
+  <path
+    d="M317 603 C340 582 355 568 376 566"
+    fill="none"
+    stroke="#f28c28"
+    stroke-width="7"
+    stroke-linecap="round"
+  />
+
+  <g fill="#f28c28">
+    <circle cx="106" cy="621" r="5"/>
+    <circle cx="200" cy="629" r="5"/>
+    <circle cx="294" cy="624" r="5"/>
+    <circle cx="388" cy="574" r="5"/>
+  </g>
+</svg>

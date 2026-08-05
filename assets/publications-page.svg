@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+viewBox="0 0 760 560"
+role="img"
+aria-labelledby="title">
+<title id="title">Mathematical publications and research papers</title>
+
+<defs>
+  <linearGradient id="leftPage" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#f6f8ff"/>
+    <stop offset="1" stop-color="#dce5ff"/>
+  </linearGradient>
+
+  <linearGradient id="rightPage" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#f2f9f9"/>
+    <stop offset="1" stop-color="#d7ecec"/>
+  </linearGradient>
+
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow
+      dx="0"
+      dy="12"
+      stdDeviation="15"
+      flood-color="#17355d"
+      flood-opacity=".13"
+    />
+  </filter>
+</defs>
+
+<rect width="760" height="560" fill="#ffffff"/>
+
+<g filter="url(#shadow)">
+  <path
+    d="M78 94
+       Q223 43 365 107
+       V458
+       Q224 397 78 444 Z"
+    fill="url(#leftPage)"
+    stroke="#17355d"
+    stroke-width="7"
+  />
+
+  <path
+    d="M682 94
+       Q537 43 395 107
+       V458
+       Q536 397 682 444 Z"
+    fill="url(#rightPage)"
+    stroke="#17355d"
+    stroke-width="7"
+  />
+
+  <path
+    d="M365 107
+       Q380 94 395 107
+       V458
+       Q380 445 365 458 Z"
+    fill="#eef2ff"
+    stroke="#17355d"
+    stroke-width="6"
+  />
+</g>
+
+<g fill="none" stroke="#8ea2ee"
+stroke-width="5" stroke-linecap="round">
+  <path d="M113 151 Q227 111 332 154"/>
+  <path d="M113 198 Q227 158 332 201"/>
+  <path d="M113 245 Q227 205 332 248"/>
+  <path d="M113 292 Q227 252 332 295"/>
+  <path d="M113 339 Q227 299 332 342"/>
+  <path d="M113 386 Q227 346 332 389"/>
+</g>
+
+<g fill="none" stroke="#73adaf"
+stroke-width="5" stroke-linecap="round">
+  <path d="M428 154 Q533 111 647 151"/>
+  <path d="M428 201 Q533 158 647 198"/>
+  <path d="M428 248 Q533 205 647 245"/>
+  <path d="M428 295 Q533 252 647 292"/>
+  <path d="M428 342 Q533 299 647 339"/>
+  <path d="M428 389 Q533 346 647 386"/>
+</g>
+
+<path
+  d="M552 68 V263 L580 237 L608 263 V55"
+  fill="#f28c28"
+/>
+
+<path
+  d="M95 475
+     C205 416 292 500 377 452
+     C459 407 551 479 672 420"
+  fill="none"
+  stroke="#2f4ed8"
+  stroke-width="7"
+  stroke-linecap="round"
+/>
+
+<g fill="#2f4ed8">
+  <circle cx="123" cy="471" r="8"/>
+  <circle cx="265" cy="464" r="8"/>
+  <circle cx="378" cy="452" r="8"/>
+</g>
+
+<g fill="#0f6f72">
+  <circle cx="488" cy="449" r="8"/>
+  <circle cx="607" cy="445" r="8"/>
+</g>
+
+<circle cx="67" cy="161" r="12" fill="#f28c28"/>
+<circle cx="699" cy="365" r="12" fill="#2f4ed8"/>
+</svg>

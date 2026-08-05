@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 360 220"
+     role="img"
+     aria-labelledby="publications-title">
+  <title id="publications-title">
+    Books, papers, and mathematical publications
+  </title>
+
+  
+  <style>
+    .outline {
+      fill: none;
+      stroke: #17355d;
+      stroke-width: 4;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .thin {
+      fill: none;
+      stroke: #2f4ed8;
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .soft-line {
+      fill: none;
+      stroke: #8ea2ee;
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .teal-line {
+      fill: none;
+      stroke: #0f6f72;
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .blue {
+      fill: #2f4ed8;
+    }
+
+    .soft-blue {
+      fill: #dce5ff;
+    }
+
+    .pale-blue {
+      fill: #f4f7ff;
+    }
+
+    .teal {
+      fill: #0f6f72;
+    }
+
+    .pale-teal {
+      fill: #dceff0;
+    }
+
+    .orange {
+      fill: #f28c28;
+    }
+
+    .pale-orange {
+      fill: #fde6cc;
+    }
+
+    .navy {
+      fill: #17355d;
+    }
+
+    .white {
+      fill: #ffffff;
+    }
+  </style>
+
+
+  <path d="M28 177 H334" class="outline"/>
+
+  <path d="M48 64 Q111 45 168 76 V181
+           Q110 153 48 171 Z"
+        class="pale-blue"
+        stroke="#17355d"
+        stroke-width="4"/>
+
+  <path d="M312 64 Q249 45 192 76 V181
+           Q250 153 312 171 Z"
+        class="pale-blue"
+        stroke="#17355d"
+        stroke-width="4"/>
+
+  <path d="M168 76 Q180 68 192 76 V181
+           Q181 172 168 181 Z"
+        class="soft-blue"
+        stroke="#17355d"
+        stroke-width="4"/>
+
+  <g class="soft-line">
+    <path d="M66 86 Q110 72 148 89"/>
+    <path d="M66 105 Q110 91 148 108"/>
+    <path d="M66 124 Q110 110 148 127"/>
+    <path d="M66 143 Q110 129 148 146"/>
+
+    <path d="M212 89 Q250 72 294 86"/>
+    <path d="M212 108 Q250 91 294 105"/>
+    <path d="M212 127 Q250 110 294 124"/>
+    <path d="M212 146 Q250 129 294 143"/>
+  </g>
+
+  <path d="M270 52 V132 L286 117 L302 132 V47"
+        class="orange"/>
+
+  <path d="M69 183 H295 V198 H69 Z"
+        class="pale-orange"
+        stroke="#17355d"
+        stroke-width="4"/>
+
+  <path d="M88 198 H313 V211 H88 Z"
+        class="soft-blue"
+        stroke="#17355d"
+        stroke-width="4"/>
+
+  <circle cx="34" cy="43" r="7" class="orange"/>
+  <circle cx="326" cy="37" r="6" class="blue"/>
+
+  <path d="M22 57 L38 41 L49 56"
+        class="teal-line"/>
+
+  <path d="M316 57 C326 44 335 44 344 57"
+        class="thin"/>
+</svg>

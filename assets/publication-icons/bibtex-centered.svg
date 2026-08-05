@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 64 64"
+     role="img"
+     aria-labelledby="title">
+  <title id="title">BibTeX</title>
+
+  <rect
+    x="5"
+    y="5"
+    width="54"
+    height="54"
+    rx="14"
+    fill="#fff3e6"
+  />
+
+  <g transform="translate(0 2)">
+    <path
+      d="M26 15
+         H22
+         C18 15 17 19 17 23
+         V27
+         C17 30 15 32 12 32
+         C15 32 17 34 17 37
+         V41
+         C17 45 18 49 22 49
+         H26"
+      fill="none"
+      stroke="#f28c28"
+      stroke-width="4"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+
+    <path
+      d="M38 15
+         H42
+         C46 15 47 19 47 23
+         V27
+         C47 30 49 32 52 32
+         C49 32 47 34 47 37
+         V41
+         C47 45 46 49 42 49
+         H38"
+      fill="none"
+      stroke="#f28c28"
+      stroke-width="4"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+
+    <path
+      d="M28 24 H37
+         M28 32 H37
+         M28 40 H35"
+      fill="none"
+      stroke="#17355d"
+      stroke-width="3"
+      stroke-linecap="round"
+    />
+  </g>
+</svg>
