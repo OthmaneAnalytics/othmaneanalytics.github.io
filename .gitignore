@@ -1,0 +1,42 @@
+# Timestamped working backups
+backup-*/
+_backup*/
+*-backup-*.html
+*-before-*.html
+*-before-*.css
+about-backup-*.html
+index-obsolete-backup-*.html
+publications-before-*.html
+publications-before-*.css
+research-backup-*.html
+research-before-*.html
+wireframe-before-*.html
+
+# Obsolete design experiments
+wireframe.html
+wireframe-*.html
+assets/wireframe*.css
+assets/research-v*.css
+assets/research-page.svg
+assets/software-page.svg
+assets/style.css
+calibration.html
+build_site.previous.py
+.profile-image
+
+# Superseded downloaded figures
+assets/research/sbb-controls.png
+assets/research/sbb-distribution-fit.png
+assets/software/drift-estimation-rates.png
+assets/software/lightsbb-transport-beta.png
+assets/software/sbbts-correlation.png
+
+# Local audit output
+site-audit-report.txt
+site-audit-report.json
+
+# Operating-system and editor files
+.DS_Store
+Thumbs.db
+*~
+*.swp
