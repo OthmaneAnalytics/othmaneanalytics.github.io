@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 360 220"
+     role="img"
+     aria-labelledby="teaching-title">
+  <title id="teaching-title">
+    Teaching probability, statistics, and stochastic processes
+  </title>
+
+  
+  <style>
+    .outline {
+      fill: none;
+      stroke: #17355d;
+      stroke-width: 4;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .thin {
+      fill: none;
+      stroke: #2f4ed8;
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .soft-line {
+      fill: none;
+      stroke: #8ea2ee;
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .teal-line {
+      fill: none;
+      stroke: #0f6f72;
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .blue {
+      fill: #2f4ed8;
+    }
+
+    .soft-blue {
+      fill: #dce5ff;
+    }
+
+    .pale-blue {
+      fill: #f4f7ff;
+    }
+
+    .teal {
+      fill: #0f6f72;
+    }
+
+    .pale-teal {
+      fill: #dceff0;
+    }
+
+    .orange {
+      fill: #f28c28;
+    }
+
+    .pale-orange {
+      fill: #fde6cc;
+    }
+
+    .navy {
+      fill: #17355d;
+    }
+
+    .white {
+      fill: #ffffff;
+    }
+  </style>
+
+
+  <rect x="33" y="22"
+        width="294"
+        height="154"
+        rx="5"
+        fill="#17656d"
+        stroke="#17355d"
+        stroke-width="6"/>
+
+  <path d="M64 64 H156"
+        stroke="#dceff0"
+        stroke-width="3"/>
+
+  <text x="62" y="101"
+        fill="#ffffff"
+        font-family="serif"
+        font-size="25">
+    dXₜ = b dt + σ dWₜ
+  </text>
+
+  <text x="62" y="136"
+        fill="#ffffff"
+        font-family="serif"
+        font-size="23">
+    E[f(Xₜ)] = Pₜf(x)
+  </text>
+
+  <path d="M220 143 C236 104 250 103 262 143
+           C276 84 292 78 310 143"
+        fill="none"
+        stroke="#f8e3ae"
+        stroke-width="4"
+        stroke-linecap="round"/>
+
+  <path d="M216 148 H313"
+        stroke="#dceff0"
+        stroke-width="3"/>
+
+  <path d="M228 52 V149"
+        stroke="#dceff0"
+        stroke-width="3"/>
+
+  <circle cx="262" cy="118" r="5" class="orange"/>
+  <circle cx="294" cy="96" r="5" fill="#dce5ff"/>
+
+  <path d="M52 176 V196 M308 176 V196"
+        class="outline"/>
+
+  <path d="M24 196 H336"
+        class="outline"/>
+
+  <g>
+    <circle cx="94" cy="194" r="17"
+            class="pale-orange"
+            stroke="#17355d"
+            stroke-width="4"/>
+    <path d="M71 220 Q94 190 117 220"
+          class="soft-blue"
+          stroke="#17355d"
+          stroke-width="4"/>
+
+    <circle cx="180" cy="194" r="17"
+            class="soft-blue"
+            stroke="#17355d"
+            stroke-width="4"/>
+    <path d="M157 220 Q180 190 203 220"
+          class="pale-teal"
+          stroke="#17355d"
+          stroke-width="4"/>
+
+    <circle cx="266" cy="194" r="17"
+            class="pale-teal"
+            stroke="#17355d"
+            stroke-width="4"/>
+    <path d="M243 220 Q266 190 289 220"
+          class="pale-orange"
+          stroke="#17355d"
+          stroke-width="4"/>
+  </g>
+</svg>

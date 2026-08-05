@@ -1,0 +1,182 @@
+/*
+ * Final Research-page figure positioning.
+ * This file is loaded after all earlier page styles.
+ */
+
+html body main .research-visual {
+  grid-area: figure !important;
+  display: flex !important;
+  width: 110% !important;
+  max-width: none !important;
+  min-width: 0 !important;
+  align-self: start !important;
+  justify-self: center !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  box-sizing: border-box !important;
+
+  /*
+   * Move every illustration visibly lower.
+   */
+  margin: 0 -5% !important;
+  padding: 74px 0 0 !important;
+
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+html body main .research-visual .research-paper-frame {
+  display: flex !important;
+  width: 100% !important;
+  max-width: none !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  /*
+   * The enlarged image extends beyond this container.
+   * Overflow crops the unnecessary white left and right sides.
+   */
+  overflow: hidden !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  background: #ffffff !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
+}
+
+html body main .research-visual .research-paper-frame img {
+  display: block !important;
+  height: auto !important;
+  max-width: none !important;
+  max-height: none !important;
+  flex: 0 0 auto !important;
+
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+
+  object-fit: contain !important;
+  object-position: center center !important;
+
+  background: #ffffff !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+/*
+ * The QQ figure contains broad white margins in the source file.
+ * Enlarge it substantially and crop equal amounts from both sides.
+ */
+html body main .research-visual--statistical
+.research-paper-frame img {
+  width: 126% !important;
+  margin-left: -13% !important;
+  margin-right: -13% !important;
+}
+
+/*
+ * The stochastic-transport image needs slightly less cropping.
+ */
+html body main .research-visual--transport
+.research-paper-frame img {
+  width: 119% !important;
+  margin-left: -9.5% !important;
+  margin-right: -9.5% !important;
+}
+
+/*
+ * The adult-to-child comparison is already wide.
+ * Enlarge it while preserving all face columns.
+ */
+html body main .research-visual--pde
+.research-paper-frame img {
+  width: 110% !important;
+  margin-left: -5% !important;
+  margin-right: -5% !important;
+}
+
+html body main .research-visual figcaption {
+  display: block !important;
+  width: 94% !important;
+  max-width: none !important;
+
+  margin: 0.58rem auto 0 !important;
+  padding: 0 !important;
+
+  color: #68747b !important;
+  background: transparent !important;
+
+  font-size: 0.64rem !important;
+  line-height: 1.4 !important;
+  text-align: center !important;
+
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+/*
+ * Remove obsolete two-panel PDE layout effects.
+ */
+html body main .research-paper-panels,
+html body main .research-paper-panel {
+  display: none !important;
+}
+
+@media (max-width: 1050px) {
+  html body main .research-visual {
+    width: 106% !important;
+    margin-inline: -3% !important;
+    padding-top: 62px !important;
+  }
+
+  html body main .research-visual--statistical
+  .research-paper-frame img {
+    width: 121% !important;
+    margin-inline: -10.5% !important;
+  }
+
+  html body main .research-visual--transport
+  .research-paper-frame img {
+    width: 116% !important;
+    margin-inline: -8% !important;
+  }
+}
+
+@media (max-width: 820px) {
+  html body main .research-visual {
+    width: 100% !important;
+    margin-inline: 0 !important;
+    padding-top: 26px !important;
+  }
+
+  html body main .research-visual .research-paper-frame {
+    width: min(100%, 760px) !important;
+    margin-inline: auto !important;
+  }
+
+  html body main .research-visual--statistical
+  .research-paper-frame img {
+    width: 114% !important;
+    margin-inline: -7% !important;
+  }
+
+  html body main .research-visual--transport
+  .research-paper-frame img {
+    width: 110% !important;
+    margin-inline: -5% !important;
+  }
+
+  html body main .research-visual--pde
+  .research-paper-frame img {
+    width: 104% !important;
+    margin-inline: -2% !important;
+  }
+}

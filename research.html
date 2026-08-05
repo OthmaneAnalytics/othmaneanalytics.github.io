@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html lang="en" data-build="RESEARCH-DIRECTION-COLUMNS-R6">
+<html lang="en" data-build="RESEARCH-VISUAL-FIX-20260805201146">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -323,7 +323,12 @@
 
     /* R6-DIRECTION-COLUMNS-END */
 
+  
+    
+
   </style>
+
+  <link rel="stylesheet" href="assets/research-visual-fix-20260805201146.css">
 </head>
 
 <body>
@@ -357,7 +362,7 @@
         <a href="publications.html">Publications</a>
         <a href="software.html">Software</a>
         <a href="teaching.html">Teaching</a>
-        <a href="documents/cv.pdf">CV</a>
+        <a href="cv.html">CV</a>
         <a href="index.html">Home</a>
       </nav>
     </div>
@@ -385,11 +390,24 @@
         Statistical foundations of generative stochastic models
       </h2>
 
-      <figure class="r5-figure">
-        <img
-          src="assets/research/statistical-foundations.svg?build=20260805181851"
-          alt="Dependent observations, an estimated stochastic trajectory, and a finite-sample uncertainty band"
+      <figure class="r5-figure research-paper-figure research-visual research-visual--statistical">
+        <a
+          class="research-paper-frame"
+          href="https://arxiv.org/abs/2605.05432"
+          aria-label="Open the associated drift-estimation paper"
         >
+          <img
+            src="assets/research/statistical-inference-qq.png?v=20260805195839"
+            alt="Four quantile-quantile plots showing Gaussian approximation of the standardized drift estimator"
+            loading="lazy"
+            decoding="async"
+          >
+        </a>
+
+        <figcaption>
+          Pointwise Gaussian approximation of the direct
+          Schrödinger-bridge drift estimator.
+        </figcaption>
       </figure>
 
       <p class="r5-description">
@@ -446,11 +464,24 @@
         Optimal transport and stochastic control
       </h2>
 
-      <figure class="r5-figure">
-        <img
-          src="assets/research/optimal-transport-control.svg?build=20260805181851"
-          alt="Controlled stochastic trajectories transporting one probability distribution into another"
+      <figure class="r5-figure research-paper-figure research-visual research-visual--transport">
+        <a
+          class="research-paper-frame"
+          href="https://arxiv.org/abs/2601.19312"
+          aria-label="Open the LightSBB-M paper"
         >
+          <img
+            src="assets/research/stochastic-transport-paths.png?v=20260805195839"
+            alt="Sample paths transporting one Gaussian distribution into another under a Schrödinger-Bass bridge"
+            loading="lazy"
+            decoding="async"
+          >
+        </a>
+
+        <figcaption>
+          Stochastic transport paths between prescribed endpoint
+          distributions.
+        </figcaption>
       </figure>
 
       <p class="r5-description">
@@ -505,12 +536,28 @@
         PDE analysis and computational methods
       </h2>
 
-      <figure class="r5-figure">
-        <img
-          src="assets/research/pde-computation.svg?build=20260805181851"
-          alt="A numerical mesh, layered PDE solution contours, and computational verification points"
-        >
-      </figure>
+      <figure
+  class="r5-figure research-paper-figure research-visual
+         research-visual--pde"
+>
+  <a
+    class="research-paper-frame"
+    href="https://arxiv.org/abs/2601.19312"
+    aria-label="Open the LightSBB-M paper"
+  >
+    <img
+      src="assets/research/pde-adult-child-computation-20260805201146.png"
+      alt="Adult input faces translated into child faces using Schrödinger-Bass generative models"
+      loading="lazy"
+      decoding="async"
+    >
+  </a>
+
+  <figcaption>
+    Adult-to-child generative translation with jointly controlled
+    drift and volatility.
+  </figcaption>
+</figure>
 
       <p class="r5-description">
         I investigate the analytical structure and numerical realization of
