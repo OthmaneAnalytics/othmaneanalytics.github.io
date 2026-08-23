@@ -1,0 +1,272 @@
+/*
+ * Final image geometry corrections — 2026-08-24.
+ *
+ * Only controls:
+ *   1. homepage hero image
+ *   2. homepage bottom spacing
+ *   3. Research introductory illustration
+ */
+
+
+/* ==========================================================
+   HERO
+
+   hero-top-half.png is physically cropped to 1536x512.
+   No CSS cropping and no object/background cover are used.
+   ========================================================== */
+
+.hero {
+  position: relative !important;
+
+  display: block !important;
+
+  width: 100% !important;
+
+  /*
+   * Natural aspect ratio of the ACTUAL cropped file.
+   * Therefore its displayed height is exactly the height
+   * implied by the top-half image at full browser width.
+   */
+  aspect-ratio: 1536 / 512 !important;
+
+  min-height: 0 !important;
+  height: auto !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  overflow: hidden !important;
+
+  background-image:
+    url("home/hero-top-half.png") !important;
+
+  /*
+   * Image dimensions and container dimensions have the same
+   * aspect ratio, so 100% x 100% does NOT distort it.
+   */
+  background-size: 100% 100% !important;
+
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+
+  border-bottom: 1px solid #dce1e8 !important;
+}
+
+
+/*
+ * Disable every historical secondary hero image.
+ */
+.hero::before,
+.hero::after {
+  content: none !important;
+  display: none !important;
+
+  background: none !important;
+}
+
+
+/*
+ * Preserve the requested white space beneath the six homepage
+ * navigation labels.
+ */
+.navigation-grid.container {
+  margin-bottom: 56px !important;
+  padding-bottom: 10px !important;
+}
+
+
+/* ==========================================================
+   RESEARCH
+
+   IMPORTANT:
+   The allocated illustration column remains approximately
+   520px wide.
+
+   We are fixing the SVG's aspect ratio/content, NOT making
+   the allocated column bigger.
+   ========================================================== */
+
+@media (min-width: 1101px) {
+
+  .research-intro-layout {
+    display: grid !important;
+
+    grid-template-columns:
+      minmax(420px, 520px)
+      minmax(0, 1fr) !important;
+
+    gap: 48px !important;
+
+    width: 100% !important;
+
+    align-items: center !important;
+  }
+
+
+  .research-intro-illustration {
+    display: flex !important;
+
+    width: 100% !important;
+    max-width: 520px !important;
+    min-width: 0 !important;
+
+    margin: 0 !important;
+
+    padding:
+      10px 14px !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    justify-self: start !important;
+
+    background:
+      linear-gradient(
+        180deg,
+        rgba(249, 251, 255, .96),
+        rgba(243, 247, 255, .92)
+      ) !important;
+
+    border:
+      1px solid #e2e8f3 !important;
+
+    border-radius:
+      10px !important;
+
+    box-shadow:
+      0 6px 18px
+      rgba(36, 51, 60, .055) !important;
+  }
+
+
+  .research-intro-illustration img {
+    display: block !important;
+
+    /*
+     * The new SVG is 960:500, so at ~492px of usable width
+     * it naturally renders around 256px high.
+     *
+     * It therefore fills almost the complete allocated box,
+     * rather than shrinking to ~200px wide as the portrait
+     * 560:760 SVG did.
+     */
+    width: 100% !important;
+    max-width: none !important;
+
+    height: auto !important;
+    max-height: none !important;
+
+    object-fit: contain !important;
+    object-position: center center !important;
+
+    margin: 0 !important;
+
+    border: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+
+  .research-intro-copy {
+    min-width: 0 !important;
+    width: 100% !important;
+  }
+}
+
+
+/* ==========================================================
+   TABLET
+   ========================================================== */
+
+@media (min-width: 768px) and (max-width: 1100.98px) {
+
+  .research-intro-layout {
+    display: grid !important;
+
+    grid-template-columns:
+      minmax(300px, 420px)
+      minmax(0, 1fr) !important;
+
+    gap: 34px !important;
+  }
+
+
+  .research-intro-illustration {
+    width: 100% !important;
+    max-width: 420px !important;
+
+    margin: 0 !important;
+    padding: 9px !important;
+
+    justify-self: start !important;
+  }
+
+
+  .research-intro-illustration img {
+    width: 100% !important;
+    max-width: none !important;
+
+    height: auto !important;
+    max-height: none !important;
+
+    object-fit: contain !important;
+  }
+}
+
+
+/* ==========================================================
+   MOBILE
+   ========================================================== */
+
+@media (max-width: 767.98px) {
+
+  /*
+   * Do NOT reinstate the historical fixed 165/190/230px hero
+   * height. The cropped image determines its own height.
+   */
+  .hero {
+    width: 100% !important;
+
+    aspect-ratio:
+      1536 / 512 !important;
+
+    min-height: 0 !important;
+    height: auto !important;
+
+    background-size:
+      100% 100% !important;
+
+    background-position:
+      center center !important;
+  }
+
+
+  .research-intro-layout {
+    grid-template-columns:
+      1fr !important;
+
+    gap: 24px !important;
+  }
+
+
+  .research-intro-illustration {
+    width: min(100%, 520px) !important;
+    max-width: 520px !important;
+
+    margin-inline: auto !important;
+
+    padding: 8px !important;
+
+    justify-self: center !important;
+  }
+
+
+  .research-intro-illustration img {
+    width: 100% !important;
+
+    height: auto !important;
+    max-height: none !important;
+
+    object-fit: contain !important;
+  }
+}
