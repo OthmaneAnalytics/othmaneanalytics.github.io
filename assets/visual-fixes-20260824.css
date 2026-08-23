@@ -1,0 +1,226 @@
+/*
+ * Visual corrections — 2026-08-24
+ *
+ * Loaded after site-final-tweaks.css.
+ * This file intentionally contains only the requested visual fixes.
+ */
+
+
+/* ==========================================================
+   HOMEPAGE HERO
+   ========================================================== */
+
+/*
+ * The source image is approximately 3:2, while the previous
+ * banner was 40:9. With background-size: cover this caused
+ * extreme vertical cropping.
+ *
+ * We make the viewing window somewhat taller AND scale the
+ * artwork down horizontally. This exposes substantially more
+ * of the original mathematical illustration.
+ */
+
+.hero {
+  aspect-ratio: 3 / 1 !important;
+  min-height: 0 !important;
+
+  background-image: url("home/hero.png") !important;
+
+  /*
+   * 74% rather than cover:
+   * the illustration is visibly smaller and more of its
+   * vertical content fits inside the banner.
+   */
+  background-size: 74% auto !important;
+  background-position: center 56% !important;
+  background-repeat: no-repeat !important;
+
+  background-color: #f2f6fd !important;
+
+  border-bottom: 1px solid #dce1e8 !important;
+}
+
+/*
+ * site-final-tweaks.css currently adds a second full image
+ * through ::after. Disable it so it cannot make the hero
+ * appear enlarged again.
+ */
+.hero::after {
+  display: none !important;
+  content: none !important;
+}
+
+
+/* ==========================================================
+   HOMEPAGE — SIX NAVIGATION PICTURES
+   ========================================================== */
+
+/*
+ * More white space after the Research / Publications /
+ * Software / Teaching / CV / About titles.
+ */
+
+.navigation-grid.container {
+  margin-bottom: 56px !important;
+  padding-bottom: 10px !important;
+}
+
+
+/* ==========================================================
+   RESEARCH — INTRO IMAGE
+   ========================================================== */
+
+/*
+ * Current final desktop CSS allows the illustration to grow
+ * to 1040px.
+ *
+ * New maximum: 520px.
+ * This is exactly half that width.
+ */
+
+@media (min-width: 1101px) {
+
+  .research-intro-layout {
+    display: grid !important;
+
+    grid-template-columns:
+      minmax(420px, 520px)
+      minmax(0, 1fr) !important;
+
+    gap: 48px !important;
+    align-items: center !important;
+
+    width: 100% !important;
+  }
+
+  .research-intro-illustration {
+    display: flex !important;
+
+    width: 520px !important;
+    max-width: 520px !important;
+    min-width: 0 !important;
+
+    margin: 0 !important;
+    padding: 8px 10px !important;
+
+    justify-self: start !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    background:
+      linear-gradient(
+        180deg,
+        rgba(250, 252, 255, 0.98),
+        rgba(244, 247, 255, 0.94)
+      ) !important;
+
+    border: 1px solid #e2e8f3 !important;
+    border-radius: 10px !important;
+
+    box-shadow:
+      0 6px 18px rgba(36, 51, 60, 0.055) !important;
+  }
+
+  .research-intro-illustration img {
+    display: block !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    height: auto !important;
+    max-height: 180px !important;
+
+    object-fit: contain !important;
+    object-position: center !important;
+
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .research-intro-copy {
+    min-width: 0 !important;
+  }
+}
+
+
+/* ==========================================================
+   RESEARCH — TABLET
+   ========================================================== */
+
+@media (min-width: 768px) and (max-width: 1100.98px) {
+
+  .research-intro-layout {
+    grid-template-columns:
+      minmax(340px, 460px)
+      minmax(0, 1fr) !important;
+
+    gap: 36px !important;
+  }
+
+  .research-intro-illustration {
+    width: min(100%, 460px) !important;
+    max-width: 460px !important;
+
+    margin: 0 !important;
+    padding: 8px !important;
+
+    background: #f8faff !important;
+    border: 1px solid #e2e8f3 !important;
+    border-radius: 10px !important;
+  }
+
+  .research-intro-illustration img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 165px !important;
+  }
+}
+
+
+/* ==========================================================
+   MOBILE
+   ========================================================== */
+
+@media (max-width: 767.98px) {
+
+  /*
+   * On phones the complete image can fit naturally by height.
+   */
+  .hero {
+    aspect-ratio: auto !important;
+    min-height: 230px !important;
+
+    background-size: auto 96% !important;
+    background-position: center center !important;
+  }
+
+  .navigation-grid.container {
+    margin-bottom: 42px !important;
+  }
+
+  .research-intro-layout {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+
+  .research-intro-illustration {
+    width: min(100%, 520px) !important;
+    max-width: 520px !important;
+
+    margin-inline: auto !important;
+    padding: 8px !important;
+
+    justify-self: center !important;
+
+    background: #f8faff !important;
+    border: 1px solid #e2e8f3 !important;
+    border-radius: 9px !important;
+  }
+
+  .research-intro-illustration img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+  }
+}
