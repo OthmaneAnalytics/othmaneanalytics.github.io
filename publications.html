@@ -41,6 +41,7 @@
   >
   <meta name="twitter:image" content="https://othmaneanalytics.github.io/assets/home/hero.png">
 
+  <link rel="stylesheet" href="assets/site-final-tweaks.css?v=20260824000158">
 </head>
 
 <body>
@@ -86,28 +87,20 @@
 
     <div class="publications-layout">
       <aside class="publications-sidebar">
+        <p class="publications-scholar-note">
+          For the most up-to-date list of my publications, please see my
+          <a
+            href="https://scholar.google.com/citations?user=M4yrAe8AAAAJ&amp;hl=en"
+          >Google Scholar profile</a>.
+        </p>
+
         <figure class="publications-illustration">
           <img
-            src="assets/publications-page.svg?v=20260805190403"
+            src="assets/publications-page.svg?v=20260824000158"
             alt=""
           >
         </figure>
-<h2 class="sidebar-heading">Years</h2>
-
-        <nav
-          class="year-navigation"
-          aria-label="Browse publications by year"
-        >
-          <a href="#year-2026">2026</a>
-<a href="#year-2025">2025</a>
-<a href="#year-2024">2024</a>
-<a href="#year-2023">2023</a>
-<a href="#year-2022">2022</a>
-<a href="#year-2021">2021</a>
-<a href="#year-2018">2018</a>
-<a href="#year-2016">2016</a>
-        </nav>
-</aside>
+      </aside>
 
       <article class="publications-content">
 <p class="publications-introduction">
@@ -1504,6 +1497,32 @@
     });
   });
 </script>
+
+
+<!-- BIBTEX-ACCORDION-START -->
+<script>
+  /*
+   * Native <details> already closes when its own summary is
+   * clicked a second time. This listener adds accordion behaviour:
+   * opening one BibTeX entry closes every other open entry.
+   */
+  document.querySelectorAll(".publication-bibtex").forEach(details => {
+    details.addEventListener("toggle", () => {
+      if (!details.open) {
+        return;
+      }
+
+      document
+        .querySelectorAll(".publication-bibtex[open]")
+        .forEach(other => {
+          if (other !== details) {
+            other.open = false;
+          }
+        });
+    });
+  });
+</script>
+<!-- BIBTEX-ACCORDION-END -->
 
 </body>
 </html>

@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 360 220"
+     role="img"
+     aria-labelledby="software-title">
+  <title id="software-title">
+    Scientific software, simulations, and computational experiments
+  </title>
+
+  
+  <style>
+    .outline {
+      fill: none;
+      stroke: #17355d;
+      stroke-width: 4;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .thin {
+      fill: none;
+      stroke: #2f4ed8;
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .soft-line {
+      fill: none;
+      stroke: #8ea2ee;
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .teal-line {
+      fill: none;
+      stroke: #0f6f72;
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .blue {
+      fill: #2f4ed8;
+    }
+
+    .soft-blue {
+      fill: #dce5ff;
+    }
+
+    .pale-blue {
+      fill: #f4f7ff;
+    }
+
+    .teal {
+      fill: #0f6f72;
+    }
+
+    .pale-teal {
+      fill: #dceff0;
+    }
+
+    .orange {
+      fill: #f28c28;
+    }
+
+    .pale-orange {
+      fill: #fde6cc;
+    }
+
+    .navy {
+      fill: #17355d;
+    }
+
+    .white {
+      fill: #ffffff;
+    }
+  </style>
+
+
+  <rect x="48" y="29"
+        width="264"
+        height="151"
+        rx="10"
+        class="pale-blue"
+        stroke="#17355d"
+        stroke-width="5"/>
+
+  <rect x="65" y="48"
+        width="230"
+        height="114"
+        class="white"
+        stroke="#8ea2ee"
+        stroke-width="3"/>
+
+  <path d="M25 184 H335 L310 207 H50 Z"
+        class="soft-blue"
+        stroke="#17355d"
+        stroke-width="5"/>
+
+  <path d="M139 184 H221 L214 195 H146 Z"
+        class="white"
+        stroke="#17355d"
+        stroke-width="3"/>
+
+  <path d="M101 83 L79 103 L101 123"
+        class="thin"/>
+
+  <path d="M144 72 L120 135"
+        class="teal-line"/>
+
+  <path d="M165 83 L187 103 L165 123"
+        class="thin"/>
+
+  <path d="M210 138 L229 112
+           L249 122 L271 87"
+        fill="none"
+        stroke="#f28c28"
+        stroke-width="4"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+
+  <path d="M207 142 H278" class="soft-line"/>
+  <path d="M209 142 V74" class="soft-line"/>
+
+  <circle cx="229" cy="112" r="5" class="orange"/>
+  <circle cx="249" cy="122" r="5" class="blue"/>
+  <circle cx="271" cy="87" r="5" class="teal"/>
+
+  <circle cx="79" cy="61" r="5" class="orange"/>
+  <circle cx="94" cy="61" r="5" class="teal"/>
+  <circle cx="109" cy="61" r="5" class="blue"/>
+
+  <path d="M320 74 C340 87 341 112 322 126"
+        class="thin"/>
+  <path d="M325 69 L320 74 L327 78"
+        class="thin"/>
+
+  <path d="M37 119 C18 105 18 81 36 68"
+        class="teal-line"/>
+  <path d="M31 64 L36 68 L30 73"
+        class="teal-line"/>
+</svg>

@@ -1,0 +1,287 @@
+/*
+ * Final requested website refinements.
+ * Loaded after all older page-specific styles.
+ */
+
+/* ==========================================================
+   1. HOME HERO — 25% SHORTER
+   Original desktop ratio: 10 / 3.
+   New height = 75% of original -> ratio 40 / 9.
+   ========================================================== */
+
+.hero {
+  aspect-ratio: 40 / 9 !important;
+  min-height: 0 !important;
+  background-position: var(--hero-position) !important;
+  background-size: cover !important;
+}
+
+/* ==========================================================
+   1b. HOME NAVIGATION ART — 25% LARGER
+   The live page contains six tiles, so all six are enlarged
+   consistently.
+   ========================================================== */
+
+.navigation-grid {
+  /* Compensates for the upward growth of scaled artwork. */
+  margin-top: 96px !important;
+}
+
+.navigation-grid .navigation-tile a {
+  font-size: 1.275rem !important;
+}
+
+.navigation-grid .navigation-tile img {
+  transform: scale(1.25) !important;
+  transform-origin: center bottom !important;
+}
+
+.navigation-grid .navigation-tile:hover img,
+.navigation-grid .navigation-tile:focus-within img {
+  transform: translateY(-3px) scale(1.25) !important;
+}
+
+/* ==========================================================
+   3. RESEARCH INTRODUCTION
+   Illustration on left, three-paragraph research statement
+   on right.
+   ========================================================== */
+
+.r5-header.research-intro-header {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 0 66px !important;
+}
+
+.research-intro-layout {
+  display: grid;
+  grid-template-columns:
+    minmax(300px, 0.82fr)
+    minmax(0, 1.18fr);
+  gap: 58px;
+  align-items: center;
+  width: 100%;
+}
+
+.research-intro-illustration {
+  display: flex;
+  width: 100%;
+  max-width: 520px;
+  min-width: 0;
+  align-items: center;
+  justify-content: center;
+  justify-self: start;
+  margin: 0;
+}
+
+.research-intro-illustration img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 390px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.research-intro-copy {
+  min-width: 0;
+}
+
+.research-intro-copy .r5-lead {
+  max-width: none;
+}
+
+.research-intro-copy .r5-intro {
+  max-width: none;
+}
+
+.research-intro-copy .research-programme-note {
+  max-width: none;
+  margin: 0.85rem 0 0;
+  color: #536068;
+  font-size: 0.87rem;
+  line-height: 1.64;
+}
+
+/* ==========================================================
+   4. PUBLICATIONS
+   Smaller outside gutters and narrower illustration column
+   give substantially more horizontal room to publication
+   titles now that year navigation is gone.
+   ========================================================== */
+
+.publications-main.container {
+  /*
+   * Global gutter is 64px total. 51.2px is exactly 20% less.
+   */
+  width: min(calc(100% - 51.2px), 1500px) !important;
+}
+
+.publications-layout {
+  grid-template-columns:
+    minmax(270px, 25%)
+    minmax(0, 75%) !important;
+  gap: 50px !important;
+}
+
+.publications-sidebar {
+  min-width: 0;
+}
+
+.publications-illustration {
+  max-width: 400px !important;
+  margin-top: 0 !important;
+}
+
+.publications-scholar-note {
+  max-width: 410px;
+  margin: 0 0 1.2rem;
+  color: #536068;
+  font-size: 0.74rem;
+  line-height: 1.52;
+}
+
+.publications-scholar-note a {
+  font-weight: 600;
+}
+
+/* ==========================================================
+   5. SOFTWARE INTRODUCTION
+   Text on left, software illustration on right.
+   ========================================================== */
+
+.software-intro-layout {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(260px, 360px);
+  gap: 56px;
+  align-items: center;
+  margin: 0 0 2.25rem;
+}
+
+.software-intro-copy {
+  min-width: 0;
+}
+
+.software-intro-copy .software-lead {
+  max-width: none;
+}
+
+.software-intro-copy .software-introduction {
+  max-width: none;
+  margin-bottom: 0;
+}
+
+.software-intro-illustration {
+  display: flex;
+  width: 100%;
+  max-width: 360px;
+  align-items: center;
+  justify-content: center;
+  justify-self: end;
+  margin: 0;
+}
+
+.software-intro-illustration img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 315px;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* ==========================================================
+   7. MOBILE — HEADER ALWAYS AVAILABLE
+   ========================================================== */
+
+@media (max-width: 767.98px) {
+  html {
+    scroll-padding-top: 76px;
+  }
+
+  .site-header {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1000 !important;
+  }
+
+  .site-nav {
+    inset: 68px 0 0 !important;
+    z-index: 1001 !important;
+  }
+
+  /* Hero remains exactly 25% shorter than previous 220px. */
+  .hero {
+    aspect-ratio: auto !important;
+    min-height: 165px !important;
+  }
+
+  .research-intro-layout {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .research-intro-illustration {
+    width: min(100%, 500px);
+    max-width: 500px;
+    justify-self: center;
+  }
+
+  .research-intro-copy {
+    width: 100%;
+  }
+
+  .software-intro-layout {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .software-intro-illustration {
+    width: min(100%, 390px);
+    max-width: 390px;
+    justify-self: center;
+  }
+
+  .publications-main.container {
+    width: min(calc(100% - 22.4px), 1500px) !important;
+  }
+
+  .publications-layout {
+    display: flex !important;
+    flex-direction: column;
+    gap: 30px !important;
+  }
+
+  .publications-scholar-note {
+    max-width: 100%;
+  }
+}
+
+/*
+ * On very narrow phones a literal 1.25 transform would make
+ * a full-width illustration overflow the viewport. Increase
+ * the available image box instead and keep it inside the screen.
+ */
+@media (max-width: 519.98px) {
+  .navigation-grid {
+    margin-top: 72px !important;
+  }
+
+  .navigation-grid .navigation-tile img {
+    width: 100% !important;
+    max-width: 412px !important;
+    height: 275px !important;
+    transform: none !important;
+  }
+
+  .navigation-grid .navigation-tile:hover img,
+  .navigation-grid .navigation-tile:focus-within img {
+    transform: translateY(-3px) !important;
+  }
+
+  .navigation-grid .navigation-tile a {
+    font-size: 1.275rem !important;
+  }
+}
