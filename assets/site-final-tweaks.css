@@ -285,3 +285,300 @@
     font-size: 1.275rem !important;
   }
 }
+
+/* VISUAL-REFINEMENT-20260824-START */
+
+/* ==========================================================
+   HOME HERO
+   Keep the reduced height, but show the complete source image.
+   The pale background blends with the image's own edges.
+   ========================================================== */
+
+.hero {
+  aspect-ratio: 40 / 9 !important;
+  min-height: 0 !important;
+
+  background-size: auto 100% !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-color: #eef4fb !important;
+}
+
+
+/* ==========================================================
+   HOME SECTION ILLUSTRATIONS
+   Enlarge through real layout dimensions rather than transform.
+   This prevents neighboring illustrations from overlapping.
+   ========================================================== */
+
+.navigation-grid.container {
+  width: min(calc(100% - 32px), 1500px) !important;
+  max-width: none !important;
+
+  margin-top: 58px !important;
+  margin-bottom: 28px !important;
+  padding-inline: 0 !important;
+}
+
+.navigation-grid .tile-grid {
+  position: relative !important;
+  top: 0 !important;
+
+  display: grid !important;
+  grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+  column-gap: 22px !important;
+  row-gap: 42px !important;
+
+  width: 100% !important;
+  align-items: end !important;
+}
+
+.navigation-grid .navigation-tile {
+  min-width: 0 !important;
+  padding: 0 !important;
+  overflow: visible !important;
+}
+
+.navigation-grid .navigation-tile a {
+  gap: 6px !important;
+  font-size: 1.275rem !important;
+  line-height: 1.15 !important;
+}
+
+.navigation-grid .navigation-tile img {
+  display: block !important;
+
+  width: 100% !important;
+  max-width: none !important;
+  height: 281px !important;
+
+  margin: 0 auto 8px !important;
+  padding: 0 !important;
+
+  object-fit: contain !important;
+  object-position: center bottom !important;
+
+  transform: none !important;
+}
+
+.navigation-grid .navigation-tile:hover img,
+.navigation-grid .navigation-tile:focus-within img {
+  transform: translateY(-3px) !important;
+}
+
+
+/* ==========================================================
+   RESEARCH INTRODUCTION
+   Use a much wider actual research figure rather than the
+   generic page illustration.
+   ========================================================== */
+
+.r5-header.research-intro-header {
+  width: 100% !important;
+  max-width: none !important;
+  margin-bottom: 72px !important;
+}
+
+.research-intro-layout {
+  display: grid !important;
+
+  grid-template-columns:
+    minmax(640px, 900px)
+    minmax(360px, 1fr) !important;
+
+  gap: 48px !important;
+
+  width: 100% !important;
+  align-items: center !important;
+}
+
+.research-intro-illustration {
+  display: flex !important;
+
+  width: 100% !important;
+  max-width: 900px !important;
+
+  margin: 0 !important;
+
+  align-items: center !important;
+  justify-content: center !important;
+  justify-self: start !important;
+}
+
+.research-intro-illustration img {
+  display: block !important;
+
+  width: 100% !important;
+  height: auto !important;
+
+  max-width: none !important;
+  max-height: 440px !important;
+
+  object-fit: contain !important;
+  object-position: center !important;
+
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.research-intro-copy {
+  min-width: 0 !important;
+}
+
+
+/* ==========================================================
+   PUBLICATIONS
+   Scholar link directly below the illustration.
+   ========================================================== */
+
+.publications-sidebar {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+}
+
+.publications-illustration {
+  order: 1 !important;
+
+  width: 100% !important;
+  max-width: 400px !important;
+
+  margin: 0 !important;
+}
+
+.publications-scholar-note {
+  order: 2 !important;
+
+  width: 100% !important;
+  max-width: 400px !important;
+
+  margin: 1rem 0 0 !important;
+
+  color: #536068 !important;
+  font-size: 0.74rem !important;
+  line-height: 1.52 !important;
+}
+
+.publications-scholar-note a {
+  font-weight: 600 !important;
+}
+
+
+/* ==========================================================
+   RESPONSIVE LAYOUT
+   ========================================================== */
+
+@media (min-width: 900px) and (max-width: 1299.98px) {
+
+  .navigation-grid.container {
+    width: min(calc(100% - 40px), 1220px) !important;
+  }
+
+  .navigation-grid .tile-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    column-gap: 36px !important;
+    row-gap: 48px !important;
+  }
+
+  .navigation-grid .navigation-tile img {
+    height: 306px !important;
+  }
+
+  .research-intro-layout {
+    grid-template-columns:
+      minmax(0, 1.35fr)
+      minmax(360px, 0.85fr) !important;
+
+    gap: 38px !important;
+  }
+
+  .research-intro-illustration {
+    max-width: 760px !important;
+  }
+}
+
+
+@media (min-width: 520px) and (max-width: 899.98px) {
+
+  .navigation-grid.container {
+    width: min(calc(100% - 32px), 860px) !important;
+  }
+
+  .navigation-grid .tile-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    column-gap: 30px !important;
+    row-gap: 42px !important;
+  }
+
+  .navigation-grid .navigation-tile img {
+    height: 281px !important;
+  }
+
+  .research-intro-layout {
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+  }
+
+  .research-intro-illustration {
+    width: min(100%, 760px) !important;
+    max-width: 760px !important;
+    justify-self: center !important;
+  }
+}
+
+
+@media (max-width: 767.98px) {
+
+  /*
+   * Same reduced hero height as requested previously, but now
+   * the complete image is visible rather than cropped.
+   */
+  .hero {
+    aspect-ratio: auto !important;
+    min-height: 165px !important;
+
+    background-size: auto 100% !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+  }
+
+  .research-intro-illustration img {
+    max-height: none !important;
+  }
+}
+
+
+@media (max-width: 519.98px) {
+
+  .navigation-grid.container {
+    width: min(calc(100% - 28px), 500px) !important;
+    margin-top: 48px !important;
+  }
+
+  .navigation-grid .tile-grid {
+    grid-template-columns: 1fr !important;
+    row-gap: 38px !important;
+  }
+
+  .navigation-grid .navigation-tile img {
+    width: 100% !important;
+    max-width: 410px !important;
+    height: 275px !important;
+
+    margin-inline: auto !important;
+
+    transform: none !important;
+  }
+
+  .navigation-grid .navigation-tile:hover img,
+  .navigation-grid .navigation-tile:focus-within img {
+    transform: translateY(-3px) !important;
+  }
+
+  .research-intro-layout {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* VISUAL-REFINEMENT-20260824-END */
