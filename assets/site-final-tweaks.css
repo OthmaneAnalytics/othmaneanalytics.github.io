@@ -286,110 +286,82 @@
   }
 }
 
-/* VISUAL-REFINEMENT-V2-START */
+/* VISUAL-REFINEMENT-V3-START */
 
 /* ==========================================================
    HOME HERO
 
-   The full-width "cover" presentation is restored.
+   ONE image only.
 
-   A second copy of the complete 3:2 artwork is placed over
-   the centre and softly feathered into that full-width
-   background. This lets the important upper/side artwork
-   remain visible without turning the banner into a narrow
-   contained image.
+   Keep the requested 25%-reduced banner height and preserve
+   the full edge-to-edge width.
+
+   Because the original image is much taller than the banner,
+   some vertical cropping is unavoidable with background-size:
+   cover. Anchor the image to the TOP so all cropping happens
+   from the unattractive bottom portion rather than the top.
    ========================================================== */
 
 .hero {
   position: relative !important;
-  overflow: hidden !important;
-
   width: 100% !important;
+
   aspect-ratio: 40 / 9 !important;
   min-height: 0 !important;
 
+  overflow: hidden !important;
+
   background-image: url("home/hero.png") !important;
   background-size: cover !important;
-  background-position: center 35% !important;
+
+  /* Preserve the top; crop the bottom. */
+  background-position: center top !important;
+
   background-repeat: no-repeat !important;
 
-  border-bottom: 1px solid #dce1e8;
+  border-bottom: 1px solid #dce1e8 !important;
 }
 
 /*
- * Complete uncropped source artwork.
- *
- * Its aspect ratio is preserved. Feathering prevents the
- * central full image from appearing as a separate rectangle.
+ * Explicitly kill the previous second-image overlay.
+ * This guarantees there can never be two hero images.
  */
+.hero::before,
 .hero::after {
-  content: "";
-
-  position: absolute !important;
-  top: 0 !important;
-  bottom: 0 !important;
-  left: 50% !important;
-
-  height: 100% !important;
-  width: auto !important;
-  aspect-ratio: 3 / 2 !important;
-
-  transform: translateX(-50%) !important;
-
-  background-image: url("home/hero.png") !important;
-  background-size: 100% 100% !important;
-  background-position: center center !important;
-  background-repeat: no-repeat !important;
-
-  -webkit-mask-image:
-    linear-gradient(
-      to right,
-      transparent 0%,
-      rgba(0, 0, 0, 0.34) 5%,
-      rgba(0, 0, 0, 0.82) 12%,
-      #000 21%,
-      #000 79%,
-      rgba(0, 0, 0, 0.82) 88%,
-      rgba(0, 0, 0, 0.34) 95%,
-      transparent 100%
-    );
-
-  mask-image:
-    linear-gradient(
-      to right,
-      transparent 0%,
-      rgba(0, 0, 0, 0.34) 5%,
-      rgba(0, 0, 0, 0.82) 12%,
-      #000 21%,
-      #000 79%,
-      rgba(0, 0, 0, 0.82) 88%,
-      rgba(0, 0, 0, 0.34) 95%,
-      transparent 100%
-    );
-
-  pointer-events: none !important;
+  content: none !important;
+  display: none !important;
+  background: none !important;
 }
 
 
 /* ==========================================================
-   HOME SIX NAVIGATION ILLUSTRATIONS
+   HOME SIX PICTURES
 
-   Preserve the larger size and proper horizontal spacing,
-   but remove roughly 70% of the vertical white space above
-   the row.
+   The previous positive top margins did not solve the visual
+   gap. Move the entire six-picture section upward.
+
+   The original combined whitespace was roughly 80–100px.
+   This removes approximately 70% of that visual separation.
    ========================================================== */
 
 .home-information {
-  margin-bottom: 8px !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 .navigation-grid.container {
   width: min(calc(100% - 32px), 1500px) !important;
   max-width: none !important;
 
-  margin-top: 18px !important;
-  margin-bottom: 28px !important;
+  /*
+   * Negative margin deliberately pulls the entire image/label
+   * row upward toward the content above.
+   */
+  margin-top: -58px !important;
+  margin-bottom: 12px !important;
 
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
   padding-inline: 0 !important;
 }
 
@@ -402,15 +374,23 @@
     repeat(6, minmax(0, 1fr)) !important;
 
   column-gap: 22px !important;
-  row-gap: 38px !important;
+  row-gap: 36px !important;
 
   width: 100% !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
   align-items: end !important;
 }
 
 .navigation-grid .navigation-tile {
   min-width: 0 !important;
+
+  margin: 0 !important;
   padding: 0 !important;
+
+  transform: none !important;
 
   border: 0 !important;
   overflow: visible !important;
@@ -420,11 +400,14 @@
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
+  justify-content: flex-end !important;
 
   gap: 6px !important;
 
   font-size: 1.275rem !important;
   line-height: 1.15 !important;
+
+  transform: none !important;
 }
 
 .navigation-grid .navigation-tile img {
@@ -450,12 +433,12 @@
 
 
 /* ==========================================================
-   RESEARCH PAGE — USE MORE OF THE SCREEN
+   RESEARCH INTRO
 
-   Almost all desktop side whitespace is removed. The three
-   introductory paragraphs retain a minimum readable column,
-   while the illustration receives approximately twice the
-   width it had originally.
+   Keep the almost edge-to-edge Research page so the text has
+   room, but reduce the illustration from ~1040px to ~520px.
+   Since the SVG keeps its aspect ratio, height is reduced by
+   the same factor automatically.
    ========================================================== */
 
 @media (min-width: 1101px) {
@@ -472,19 +455,24 @@
     width: 100% !important;
     max-width: none !important;
 
-    margin: 0 0 68px !important;
+    margin: 0 0 60px !important;
   }
 
   .research-intro-layout {
     display: grid !important;
 
+    /*
+     * Illustration returned to about half its previous width.
+     * Remaining horizontal space goes to the paragraphs.
+     */
     grid-template-columns:
-      minmax(720px, 1040px)
-      minmax(400px, 1fr) !important;
+      minmax(420px, 520px)
+      minmax(0, 1fr) !important;
 
-    gap: 34px !important;
+    gap: 48px !important;
 
     width: 100% !important;
+
     align-items: center !important;
   }
 
@@ -492,10 +480,10 @@
     display: flex !important;
 
     width: 100% !important;
-    max-width: 1040px !important;
+    max-width: 520px !important;
 
     margin: 0 !important;
-    padding: 16px 22px !important;
+    padding: 10px 14px !important;
 
     align-items: center !important;
     justify-content: center !important;
@@ -509,30 +497,31 @@
       ) !important;
 
     border: 1px solid #e2e8f3 !important;
-    border-radius: 12px !important;
+    border-radius: 10px !important;
 
     box-shadow:
-      0 10px 26px rgba(36, 51, 60, 0.07) !important;
+      0 6px 18px rgba(36, 51, 60, 0.055) !important;
   }
 
   .research-intro-illustration img {
     display: block !important;
 
     width: 100% !important;
-    max-width: none !important;
+    max-width: 500px !important;
+
     height: auto !important;
-    max-height: none !important;
+    max-height: 270px !important;
 
     object-fit: contain !important;
-    object-position: center center !important;
+    object-position: center !important;
 
+    background: transparent !important;
     border: 0 !important;
     box-shadow: none !important;
-    background: transparent !important;
   }
 
   .research-intro-copy {
-    min-width: 400px !important;
+    min-width: 0 !important;
     width: 100% !important;
   }
 
@@ -546,13 +535,14 @@
 
 
 /* ==========================================================
-   TABLET
+   TABLET HOME
    ========================================================== */
 
 @media (min-width: 900px) and (max-width: 1299.98px) {
 
   .navigation-grid.container {
     width: min(calc(100% - 40px), 1220px) !important;
+    margin-top: -40px !important;
   }
 
   .navigation-grid .tile-grid {
@@ -560,11 +550,54 @@
       repeat(3, minmax(0, 1fr)) !important;
 
     column-gap: 36px !important;
-    row-gap: 42px !important;
+    row-gap: 40px !important;
   }
 
   .navigation-grid .navigation-tile img {
     height: 306px !important;
+  }
+}
+
+
+/* ==========================================================
+   TABLET RESEARCH
+   ========================================================== */
+
+@media (min-width: 768px) and (max-width: 1100.98px) {
+
+  #main.r5-main {
+    width: min(calc(100% - 32px), 1100px) !important;
+  }
+
+  .research-intro-layout {
+    display: grid !important;
+
+    grid-template-columns:
+      minmax(300px, 420px)
+      minmax(0, 1fr) !important;
+
+    gap: 34px !important;
+
+    align-items: center !important;
+  }
+
+  .research-intro-illustration {
+    width: 100% !important;
+    max-width: 420px !important;
+
+    margin: 0 !important;
+    padding: 10px !important;
+
+    background: #f8faff !important;
+    border: 1px solid #e2e8f3 !important;
+    border-radius: 9px !important;
+  }
+
+  .research-intro-illustration img {
+    width: 100% !important;
+    max-height: 230px !important;
+
+    object-fit: contain !important;
   }
 }
 
@@ -577,7 +610,7 @@
 
   .navigation-grid.container {
     width: min(calc(100% - 32px), 860px) !important;
-    margin-top: 16px !important;
+    margin-top: -24px !important;
   }
 
   .navigation-grid .tile-grid {
@@ -585,33 +618,11 @@
       repeat(2, minmax(0, 1fr)) !important;
 
     column-gap: 30px !important;
-    row-gap: 38px !important;
+    row-gap: 36px !important;
   }
 
   .navigation-grid .navigation-tile img {
     height: 281px !important;
-  }
-
-  .research-intro-layout {
-    grid-template-columns: 1fr !important;
-    gap: 25px !important;
-  }
-
-  .research-intro-illustration {
-    width: min(100%, 900px) !important;
-    max-width: 900px !important;
-
-    margin-inline: auto !important;
-    padding: 12px !important;
-
-    background: #f8faff !important;
-    border: 1px solid #e2e8f3 !important;
-    border-radius: 10px !important;
-  }
-
-  .research-intro-illustration img {
-    width: 100% !important;
-    height: auto !important;
   }
 }
 
@@ -622,36 +633,73 @@
 
 @media (max-width: 767.98px) {
 
+  /*
+   * Same principle on phones:
+   * full-width image, top preserved, bottom cropped.
+   */
   .hero {
     aspect-ratio: auto !important;
     min-height: 165px !important;
 
     background-size: cover !important;
-    background-position: center 35% !important;
+    background-position: center top !important;
   }
 
-  .home-information {
-    margin-bottom: 6px !important;
+  .hero::before,
+  .hero::after {
+    content: none !important;
+    display: none !important;
   }
 
   #main.r5-main {
-    width: min(calc(100% - 28px), 1440px) !important;
+    width: min(calc(100% - 28px), 760px) !important;
+  }
+
+  .research-intro-layout {
+    grid-template-columns: 1fr !important;
+    gap: 22px !important;
+  }
+
+  .research-intro-illustration {
+    width: min(100%, 480px) !important;
+    max-width: 480px !important;
+
+    justify-self: center !important;
+
+    margin: 0 auto !important;
+    padding: 10px !important;
+
+    background: #f8faff !important;
+    border: 1px solid #e2e8f3 !important;
+    border-radius: 9px !important;
+  }
+
+  .research-intro-illustration img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 250px !important;
+
+    object-fit: contain !important;
   }
 }
 
 
 @media (max-width: 519.98px) {
 
+  /*
+   * Do not use the large negative desktop offset on a
+   * single-column phone layout.
+   */
   .navigation-grid.container {
     width: min(calc(100% - 28px), 500px) !important;
 
-    margin-top: 14px !important;
-    margin-bottom: 24px !important;
+    margin-top: -10px !important;
+    margin-bottom: 20px !important;
   }
 
   .navigation-grid .tile-grid {
     grid-template-columns: 1fr !important;
-    row-gap: 34px !important;
+    row-gap: 32px !important;
   }
 
   .navigation-grid .navigation-tile img {
@@ -663,31 +711,6 @@
 
     transform: none !important;
   }
-
-  .navigation-grid .navigation-tile:hover img,
-  .navigation-grid .navigation-tile:focus-within img {
-    transform: translateY(-3px) !important;
-  }
-
-  .research-intro-layout {
-    grid-template-columns: 1fr !important;
-  }
-
-  .research-intro-illustration {
-    width: 100% !important;
-
-    margin: 0 !important;
-    padding: 10px !important;
-
-    background: #f8faff !important;
-    border: 1px solid #e2e8f3 !important;
-    border-radius: 9px !important;
-  }
-
-  .research-intro-illustration img {
-    width: 100% !important;
-    height: auto !important;
-  }
 }
 
-/* VISUAL-REFINEMENT-V2-END */
+/* VISUAL-REFINEMENT-V3-END */
