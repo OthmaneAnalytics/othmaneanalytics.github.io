@@ -1,0 +1,83 @@
+/*
+ * Final homepage hero crop.
+ *
+ * Original image:
+ *   remove top 15%
+ *   retain middle 40%
+ *   remove bottom 45%
+ *
+ * The PNG itself is cropped, so there is no CSS zooming.
+ */
+
+.hero {
+  position: relative !important;
+
+  display: block !important;
+
+  width: 100% !important;
+  max-width: none !important;
+
+  /*
+   * Use the natural dimensions of the cropped image.
+   * This makes the hero substantially shorter.
+   */
+  aspect-ratio: 1536 / 410 !important;
+
+  height: auto !important;
+  min-height: 0 !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  overflow: hidden !important;
+
+  background-image:
+    url("home/hero-middle-40.png") !important;
+
+  /*
+   * Full page width without cropping or enlargement.
+   */
+  background-size: 100% auto !important;
+
+  background-position:
+    center center !important;
+
+  background-repeat:
+    no-repeat !important;
+
+  background-color:
+    #eef4fc !important;
+
+  border-bottom:
+    1px solid #dce1e8 !important;
+}
+
+
+/*
+ * Disable the older duplicate hero layers.
+ */
+.hero::before,
+.hero::after {
+  content: none !important;
+  display: none !important;
+  background: none !important;
+}
+
+
+@media (max-width: 767.98px) {
+  .hero {
+    width: 100% !important;
+
+    aspect-ratio:
+      1536 / 410 !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+
+    background-size:
+      100% auto !important;
+
+    background-position:
+      center center !important;
+  }
+}
