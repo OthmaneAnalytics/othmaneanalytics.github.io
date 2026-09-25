@@ -435,16 +435,14 @@
 /* ==========================================================
    RESEARCH INTRO
 
-   Keep the almost edge-to-edge Research page so the text has
-   room, but reduce the illustration from ~1040px to ~520px.
-   Since the SVG keeps its aspect ratio, height is reduced by
-   the same factor automatically.
+   Match the site's standard content width while preserving
+   the illustration and two-column layout.
    ========================================================== */
 
 @media (min-width: 1101px) {
 
   #main.r5-main {
-    width: min(calc(100% - 20px), 1760px) !important;
+    width: min(calc(100% - 64px), 1440px) !important;
     max-width: none !important;
 
     margin-right: auto !important;
@@ -566,7 +564,7 @@
 @media (min-width: 768px) and (max-width: 1100.98px) {
 
   #main.r5-main {
-    width: min(calc(100% - 32px), 1100px) !important;
+    width: min(calc(100% - 40px), 1100px) !important;
   }
 
   .research-intro-layout {
